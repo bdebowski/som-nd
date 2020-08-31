@@ -7,7 +7,7 @@ See the example.py file for usage example.  Training code is provided to simplif
 ## Caveats
 1. The training code included assumes that your entire training dataset resides in a Tensor on the same device as your model.  If you are training on GPU and have a large dataset this means you may not have enough GPU memory to use the training code provided.  You can write your own training loop following the loop provided as an example.
 
-2. The model computes the distances between all nodes in the map and caches these values to speed up training.  This caching requres M^2 x size(dtype) of device memory.  If you are creating a large map and training on GPU this means you may not have enough GPU memory available to run this code.
+2. The model computes the distances between all nodes in the map and caches these values to speed up training.  This caching requres M^2 x sizeof(dtype) of device memory, where M is the number of nodes in the map.  If you are creating a large map and training on GPU this means you may not have enough GPU memory available to run this code.
 
 ## Requirements
 - pytorch >= 1.5.0
