@@ -7,7 +7,7 @@ import functools
 
 import torch
 
-from src.som.model import ModelSaverLoader
+from .model import ModelSaverLoader
 
 
 class AlphaSchedule:
