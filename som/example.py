@@ -7,8 +7,8 @@ Colours are used because they illustrate the mechanics of the SOM in an easy to 
 import torch
 import matplotlib.pyplot as plt
 
-from src.som.model import SOM, ModelSaverLoader
-from src.som.training import ModelTraining
+from .model import SOM, ModelSaverLoader
+from .training import ModelTraining
 
 
 DEVICE = "cuda:0"
