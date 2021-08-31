@@ -1,3 +1,4 @@
+
 # som-nd
 PyTorch implementation of Self Organizing Map allowing N-Dimensional maps (where N can be any positive integer).  Uses dot-product similarity (implemented as proposed in [1]) instead of Euclidean distance.  I wrote this because existing pytorch som implementations I found were limited to 2 dimensional maps and did not provide usage for dot-product similarity.  I also needed some practice working with pytorch.
 
